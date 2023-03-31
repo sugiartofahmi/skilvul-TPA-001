@@ -21,7 +21,7 @@ header nav ul {
   list-style-type: none;
 }
 
-header nav ul li a {
+header nav ul li {
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
@@ -36,7 +36,34 @@ header nav ul li a {
 }
 
 main {
-  padding: 5vh 20vh;
+  width: 100%;
+}
+#home_section {
   width: 100%;
   min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  row-gap: 20px;
+}
+
+#name {
+  background: -o-linear-gradient(right, #3a80f5, #4bdf80);
+  background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
+  background: linear-gradient(to right, #3a80f5, #4bdf80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#greeting,
+#description {
+  font-weight: lighter;
+}
+
+#description {
+  margin: 0 43vh;
+  font-size: 20px;
 }
