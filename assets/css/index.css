@@ -53,13 +53,24 @@ main {
   text-align: center;
   row-gap: 20px;
 }
-
-span {
+#home_section span {
   background: -o-linear-gradient(right, #3a80f5, #4bdf80);
   background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
   background: linear-gradient(to right, #3a80f5, #4bdf80);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+.resume_icon {
+  height: 35px;
 }
 
 #greeting,
@@ -72,18 +83,19 @@ span {
   font-size: 20px;
 }
 
-#projects_section {
+#projects_section,
+#blog_section {
   margin: 5vh 20vh;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-#projects_label {
+.label {
   font-size: 30px;
 }
 
-#projects_description {
+.description {
   font-size: 15px;
   font-weight: lighter;
 }
@@ -127,9 +139,28 @@ span {
   padding-bottom: 10px;
 }
 
-#projects_grid {
+.grid {
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 40px;
   padding-right: 50px;
+}
+
+.grid_blog {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.card_blog {
+  display: flex;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.card_blog > .card_info:hover {
+  background: -o-linear-gradient(right, #3a80f5, #4bdf80);
+  background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
+  background: linear-gradient(to right, #3a80f5, #4bdf80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
