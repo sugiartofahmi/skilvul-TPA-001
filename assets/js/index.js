@@ -62,7 +62,38 @@ home.onclick = () => {
 
 about.onclick = () => {
   document.title = "About | Fahmi Sugiarto";
-  main.innerHTML = `<h1>Tets</h1>`;
+  main.innerHTML = `<section id="about_section">
+  <section>
+    <h1 class="label"><span>About</span></h1>
+   
+  </section>
+  <section class="grid_about">
+    <div class="card_about">
+      <div class="card_info">
+        <p class="text_title"><span>
+        This is me
+        </span>
+        </p>
+        <p class="text_body">I am a student pursuing a degree in technology. I have experience in web programming, especially in front-end development using HTML, CSS and JavaScript. I also have skills in using frameworks like React and Vue. I am very interested in doing an internship in front-end web development and am confident that I can add positive value to the company.
+
+        </p>
+
+      </div>
+    </div>
+    <div class="card_about">
+    <div class="card_info">
+      <p class="text_title"><span>
+      This is me
+      </span>
+      </p>
+      <p class="text_body">I am a student pursuing a degree in technology. I have experience in web programming, especially in front-end development using HTML, CSS and JavaScript. I also have skills in using frameworks like React and Vue. I am very interested in doing an internship in front-end web development and am confident that I can add positive value to the company.
+
+      </p>
+
+    </div>
+  </div>
+  </section>
+</section>`;
 };
 
 projects.onclick = () => {
