@@ -53,7 +53,7 @@ main {
   text-align: center;
   row-gap: 20px;
 }
-#home_section span {
+span {
   background: -o-linear-gradient(right, #3a80f5, #4bdf80);
   background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
   background: linear-gradient(to right, #3a80f5, #4bdf80);
@@ -84,7 +84,8 @@ main {
 }
 
 #projects_section,
-#blog_section {
+#blog_section,
+#about_section {
   margin: 5vh 20vh;
   display: flex;
   flex-direction: column;
@@ -146,12 +147,14 @@ main {
   padding-right: 50px;
 }
 
-.grid_blog {
+.grid_blog,
+.grid_about {
   display: grid;
   grid-template-columns: auto;
 }
 
-.card_blog {
+.card_blog,
+.card_about {
   display: flex;
   border-radius: 10px;
   padding: 2px;
