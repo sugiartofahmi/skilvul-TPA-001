@@ -1,186 +1,211 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --black: #232223;
+  --blue: #3a80f5;
+  --green: #4bdf80;
+}
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: var(--white);
 }
-
-#header {
-  display: grid;
-  place-items: center;
-}
-#main_section {
-  display: grid;
+body,
+.modal_content,
+header {
+  background-color: var(--black);
 }
 
 a {
   text-decoration: none;
 }
-
-body {
-  display: grid;
-  width: 100%;
-  height: 98vh;
-  grid-template-rows: auto 1fr;
-  background-color: #232223;
-}
-
-#header > nav > ul {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 25px;
-}
-
-#header > nav > ul li {
-  font-weight: 600;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.active {
-  background: -webkit-linear-gradient(left, #3a80f5, #4bdf80);
-  background: -o-linear-gradient(right, #3a80f5, #4bdf80);
-  background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
-  background: linear-gradient(to right, #3a80f5, #4bdf80);
+span,
+.nav_link:hover {
+  background: -webkit-linear-gradient(left, var(--blue), var(--green));
+  background: -o-linear-gradient(right, var(--blue), var(--green));
+  background: -moz-linear-gradient(right, var(--blue), var(--green));
+  background: linear-gradient(to right, var(--blue), var(--green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#home_page {
+.card:hover {
+  background: -webkit-linear-gradient(left, var(--blue), var(--green));
+  background: -o-linear-gradient(right, var(--blue), var(--green));
+  background: -moz-linear-gradient(right, var(--blue), var(--green));
+  background: linear-gradient(to right, var(--blue), var(--green));
+}
+header,
+header > nav > ul,
+main,
+#home,
+#about,
+#projects,
+#blog,
+.resume,
+#skills,
+.container,
+.card,
+.content {
   display: flex;
-  flex-direction: column;
+}
+
+header,
+header > nav > ul {
+  flex-direction: row;
+}
+
+header,
+main,
+#home,
+#about,
+#projects,
+#blog,
+.resume {
   align-items: center;
+}
+
+header,
+main,
+#home,
+.resume {
   justify-content: center;
-  text-align: center;
+}
+
+header,
+main,
+.card_image > img {
+  width: 100%;
+}
+
+header {
+  height: 10vh;
+  position: fixed;
+}
+
+header > nav > ul {
+  list-style: none;
+  justify-content: space-between;
+  column-gap: 25px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+main,
+#home,
+#about,
+#projects,
+#blog,
+.container,
+.card,
+.content {
+  flex-direction: column;
+}
+
+main,
+.modal,
+.card_image > img {
+  height: 100%;
+}
+
+#home {
   font-size: 30px;
   row-gap: 20px;
+  padding-top: 5vh;
 }
 
-#greeting,
-.about {
-  font-weight: lighter;
+#home,
+#about,
+#projects,
+#blog {
+  width: 80%;
+  min-height: 100vh;
 }
 
-.about {
-  margin: 0 43vh;
-  font-size: 20px;
+#about,
+#projects,
+#blog {
+  padding-top: 15vh;
+  justify-content: flex-start;
+}
+
+.container {
+  align-self: self-start;
+}
+
+.resume,
+.container,
+#skills {
+  gap: 20px;
 }
 
 .resume {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 20px;
-  gap: 20px;
 }
 
 .resume_icon {
   height: 35px;
 }
 
-.skill_icon {
-  height: 90px;
-}
-
-#projects_page,
-#about_page,
-#blog_page {
-  margin: 5vh 20vh;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
+#greeting,
+.about,
 .description {
-  font-size: 15px;
   font-weight: lighter;
 }
+
+.about {
+  font-size: 20px;
+  text-align: center;
+  width: 74%;
+}
+
 .title {
   font-size: 30px;
 }
 
-.text_title {
-  font-size: 23px;
-  font-weight: bold;
+.description {
+  font-size: 15px;
 }
 
-.text_body {
+.sub_title {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.sub_body {
   font-size: 18px;
   text-align: justify;
-  text-justify: inter-word;
+  padding: 0 10px;
+}
+
+.skill_icon {
+  height: 90px;
+}
+
+.card,
+.card_image > img {
+  border-radius: 10px;
 }
 
 .card {
+  border: 2px solid rgb(110, 110, 110);
+  height: 270px;
   width: 300px;
-  height: 254px;
-  padding: 0.8em;
-  position: relative;
-  overflow: visible;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: rgb(110, 110, 110);
-  border-width: 1px;
-}
-
-.card:hover {
-  background: -o-linear-gradient(right, #3a80f5, #4bdf80);
-  background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
-  background: linear-gradient(to right, #3a80f5, #4bdf80);
-}
-
-.card_img > img {
-  height: 100%;
-  width: 100%;
-  border-radius: 0.5rem;
-}
-
-.card_info {
-  padding: 5px 5px;
-  cursor: pointer;
-}
-
-.card_title {
-  font-weight: 900;
-  font-size: 1.2em;
-  line-height: 1.5;
-}
-
-.card_body {
-  font-size: 0.9em;
-  padding-bottom: 10px;
+  padding: 10px;
+  gap: 5px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  row-gap: 40px;
-  padding-right: 50px;
+  gap: 30px;
 }
 
-.grid_blog,
-.grid_about {
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.card_blog,
-.card_about {
-  display: flex;
-  border-radius: 10px;
-  padding: 2px;
-}
-
-.card_blog > .card_info:hover {
-  background: -o-linear-gradient(right, #3a80f5, #4bdf80);
-  background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
-  background: linear-gradient(to right, #3a80f5, #4bdf80);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#open_modal,
+.close:hover,
+.close:focus {
+  cursor: pointer;
 }
 
 .modal {
@@ -190,15 +215,12 @@ body {
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
   overflow: scroll;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
-  background-color: #232223;
+.modal_content {
   margin: auto;
   padding: 20px;
   border: 1px solid rgb(110, 110, 110);
@@ -207,13 +229,11 @@ body {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
   gap: 30px;
 }
 
 .sub_content {
-  margin: 0 0 0 15px;
+  margin: 0 30px;
 }
 .close {
   color: #aaaaaa;
@@ -226,5 +246,4 @@ body {
 .close:focus {
   color: #000;
   text-decoration: none;
-  cursor: pointer;
 }

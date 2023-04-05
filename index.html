@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Fahmi Sugiarto</title>
+    <title>Fahmi Sugiarto</title>
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,22 +14,20 @@
     />
   </head>
   <body>
-    <header id="header">
+    <header>
       <nav>
         <ul>
-          <li id="home" class="nav_link active">Home</li>
-          <li id="about" class="nav_link">About</li>
-          <li id="projects" class="nav_link">Projects</li>
-          <li id="blog" class="nav_link">Blog</li>
+          <li><a class="nav_link" href="#home">Home</a></li>
+          <li><a class="nav_link" href="#about">About</a></li>
+          <li><a class="nav_link" href="#projects">Projects</a></li>
+          <li><a class="nav_link" href="#blog">Blog</a></li>
         </ul>
       </nav>
     </header>
-    <main id="main_section">
-      <section id="home_page">
+    <main>
+      <section id="home">
         <h1 id="greeting">Hello world, i am</h1>
-        <h1 id="name">
-          MOHAMMAD NUR<span class="active">FAHMI</span> SUGIARTO
-        </h1>
+        <h1>MOHAMMAD NUR<span>FAHMI</span> SUGIARTO</h1>
         <h1 class="about">
           Informatics engineering student at Nusantara Islamic University, has
           an interest in website development, especially in front end web
@@ -50,8 +48,154 @@
           </a>
         </section>
       </section>
-    </main>
+      <section id="about">
+        <section class="container">
+          <section>
+            <h1 class="title"><span>About</span></h1>
+            <h1 class="description">Here I tell a little about me</h1>
+          </section>
+          <section>
+            <p class="sub_title"><span> This is me </span></p>
+            <p class="sub_body">
+              I am a student pursuing a degree in technology. I have experience
+              in web programming, especially in front-end development using
+              HTML, CSS and JavaScript. I also have skills in using frameworks
+              like React and Vue. I am very interested in doing an internship in
+              front-end web development and am confident that I can add positive
+              value to the company.
+            </p>
+          </section>
+          <section>
+            <p class="sub_title"><span>Skills </span></p>
+            <section id="skills">
+              <img class="skill_icon" src="./assets/icon/html.svg" />
+              <img class="skill_icon" src="./assets/icon/css.svg" />
+              <img class="skill_icon" src="./assets/icon/js.svg" />
+              <img class="skill_icon" src="./assets/icon/react.svg" />
+              <img class="skill_icon" src="./assets/icon/tailwind.svg" />
+            </section>
+          </section>
+        </section>
+      </section>
+      <section id="projects">
+        <section class="container">
+          <section>
+            <h1 class="title"><span>Projects</span></h1>
+            <h1 class="description">
+              These are some of the projects I've made
+            </h1>
+          </section>
+          <section class="grid">
+            <section class="card">
+              <a href="https://shortway.mnfs.dev/" target="_blank">
+                <section class="card_image">
+                  <img src="./assets/img/shortway.png" alt="" />
+                </section>
+                <section class="card_body">
+                  <p class="sub_title">Shortway</p>
+                  <p class="description">
+                    A website application to shorten long urls
+                  </p>
+                </section>
+              </a>
+            </section>
+            <section class="card">
+              <a href="https://weather.mnfs.dev/" target="_blank">
+                <section class="card_image">
+                  <img src="./assets/img/weather.png" alt="" />
+                </section>
+                <section class="card_body">
+                  <p class="sub_title">Weather App</p>
+                  <p class="description">
+                    A website to see the weather in several places
+                  </p>
+                </section>
+              </a>
+            </section>
+            <section class="card">
+              <a href="https://quickchat.mnfs.dev/" target="_blank">
+                <section class="card_image">
+                  <img src="./assets/img/quickchat.png" alt="" />
+                </section>
+                <section class="card_body">
+                  <p class="sub_title">Quickchat</p>
+                  <p class="description">
+                    A website to generate whatsapp numbers to url
+                  </p>
+                </section>
+              </a>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section id="blog">
+        <section class="container">
+          <section>
+            <h1 class="title"><span>Blog</span></h1>
+            <h1 class="description">
+              You can read my writings, hoping to help you understand everything
+              about web developers
+            </h1>
+          </section>
+          <section id="open_modal">
+            <p class="sub_title">React app with Vite</p>
+            <p class="description">How to create a new React app with Vite</p>
+          </section>
+          <section id="my_modal" class="modal">
+            <section class="modal_content">
+              <span class="close">&times;</span>
+              <section class="content">
+                <section>
+                  <p class="sub_title">
+                    How to create a new React app with Vite
+                  </p>
+                  <p class="sub_body">
+                    Vite.js is a development tool that comes with a dev server
+                    and is used for modern web applications. It offers a faster
+                    and smoother workflow in terms of development. It has two
+                    major parts:
+                  </p>
 
+                  <ul class="sub_content">
+                    <li>
+                      A dev server serves the source files over native ES
+                      modules, with build-in features and fast Hot Module
+                      Replacement (HMR) for updating modules during the
+                      execution of the application. When changes are made to the
+                      source code of an application, only those changes are
+                      updated, without the need to reload the entire
+                      application. This helps speed up the development time.
+                    </li>
+                    <li>
+                      A build command enables us to bundle our code with Rollup
+                      and offers highly optimized static assets for production.
+                    </li>
+                  </ul>
+                </section>
+                <section>
+                  <p class="sub_title">How to use</p>
+                  <ol class="sub_content">
+                    <li>yarn create vite</li>
+                    <li>
+                      Name the project to be created, example "learn-react"
+                    </li>
+                    <li>
+                      Enter into the project folder that was created, with the
+                      command, cd learn-react
+                    </li>
+                    <li>Install dependencies, with command yarn</li>
+                    <li>
+                      Run the dev command below to start the development server,
+                      with command yarn dev
+                    </li>
+                  </ol>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
     <script type="module" src="./assets/js/index.js"></script>
   </body>
 </html>
