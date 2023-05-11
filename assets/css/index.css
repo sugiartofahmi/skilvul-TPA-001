@@ -10,15 +10,7 @@
   font-family: "Poppins", sans-serif;
   color: var(--white);
 }
-body,
-.modal_content,
-header {
-  background-color: var(--black);
-}
 
-a {
-  text-decoration: none;
-}
 span,
 .nav_link:hover {
   background: -webkit-linear-gradient(left, var(--blue), var(--green));
@@ -35,132 +27,117 @@ span,
   background: -moz-linear-gradient(right, var(--blue), var(--green));
   background: linear-gradient(to right, var(--blue), var(--green));
 }
-header,
-header > nav > ul,
-main,
-#home,
-#about,
-#projects,
-#blog,
-.resume,
-#skills,
-.container,
-.card,
-.content {
+
+a {
+  text-decoration: none;
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.display-flex {
   display: flex;
 }
 
-header,
-header > nav > ul {
+.flex-row {
   flex-direction: row;
 }
 
-header,
-main,
-#home,
-#about,
-#projects,
-#blog,
-.resume {
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
   align-items: center;
 }
 
-header,
-main,
-#home,
-.resume {
+.justify-center {
   justify-content: center;
 }
 
-header,
-main,
-.card_image > img {
+.w-full {
   width: 100%;
 }
 
-header {
-  height: 10vh;
+.h-full {
+  height: 100%;
+}
+
+.fixed {
   position: fixed;
+}
+
+.h-10vh {
+  height: 10vh;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-80 {
+  width: 80%;
 }
 
 header > nav > ul {
   list-style: none;
-  justify-content: space-between;
   column-gap: 25px;
   font-weight: 600;
   font-size: 18px;
 }
 
-main,
-#home,
-#about,
-#projects,
-#blog,
-.container,
-.card,
-.content {
-  flex-direction: column;
+.pt-15vh {
+  padding-top: 15vh;
 }
 
-main,
-.modal,
-.card_image > img {
-  height: 100%;
-}
-
-#home {
-  font-size: 30px;
-  row-gap: 20px;
+.pt-5vh {
   padding-top: 5vh;
 }
 
-#home,
-#about,
-#projects,
-#blog {
-  width: 80%;
-  min-height: 100vh;
-}
-
-#about,
-#projects,
-#blog {
-  padding-top: 15vh;
+.flex-start {
   justify-content: flex-start;
 }
 
-.container {
+.align-start {
   align-self: self-start;
 }
 
-.resume,
-.container,
-#skills {
+.text-30px {
+  font-size: 30px;
+}
+
+.text-20px {
+  font-size: 20px;
+}
+
+.gap-x-20px {
+  row-gap: 20px;
+}
+
+.gap-20px {
   gap: 20px;
 }
 
-.resume {
+.pt-20px {
   padding-top: 20px;
 }
 
-.resume_icon {
+.h-35px {
   height: 35px;
 }
 
-#greeting,
-.about,
-.description {
+.font-light {
   font-weight: lighter;
 }
 
 .about {
-  font-size: 20px;
   text-align: center;
   width: 74%;
-}
-
-.title {
-  font-size: 30px;
 }
 
 .description {
@@ -210,7 +187,6 @@ main,
 
 .modal {
   display: none;
-  position: fixed;
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -224,7 +200,6 @@ main,
   margin: auto;
   padding: 20px;
   border: 1px solid rgb(110, 110, 110);
-  width: 80%;
   border-radius: 10px;
 }
 

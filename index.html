@@ -13,10 +13,12 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
+  <body class="bg-black">
+    <header
+      class="h-10vh fixed w-full display-flex flex-row bg-black items-center justify-center"
+    >
       <nav>
-        <ul>
+        <ul class="display-flex flex-row justify-between">
           <li><a class="nav_link" href="#home">Home</a></li>
           <li><a class="nav_link" href="#about">About</a></li>
           <li><a class="nav_link" href="#projects">Projects</a></li>
@@ -24,35 +26,59 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section id="home">
-        <h1 id="greeting">Hello world, i am</h1>
+    <main
+      class="h-full w-full display-flex flex-col items-center justify-center"
+    >
+      <section
+        class="gap-x-20px text-30px pt-5vh w-80 min-h-screen display-flex flex-col items-center justify-center"
+        id="home"
+      >
+        <h1 class="font-light" id="greeting">Hello world, i am</h1>
         <h1>MOHAMMAD NUR<span>FAHMI</span> SUGIARTO</h1>
-        <h1 class="about">
+        <h1 class="about font-light text-20px">
           Informatics engineering student at Nusantara Islamic University, has
           an interest in website development, especially in front end web
           developer
         </h1>
-        <section class="resume">
+        <section
+          class="resume pt-20px gap-20px display-flex items-center justify-center"
+        >
           <a href="https://github.com/sugiartofahmi" target="_blank">
-            <img class="resume_icon" src="./assets/icon/github.svg" alt="" />
+            <img
+              class="resume_icon h-35px"
+              src="./assets/icon/github.svg"
+              alt=""
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/mohammad-nurfahmi-sugiarto"
             target="_blank"
           >
-            <img class="resume_icon" src="./assets/icon/linkedin.png" alt="" />
+            <img
+              class="resume_icon h-35px"
+              src="./assets/icon/linkedin.png"
+              alt=""
+            />
           </a>
           <a href="https://www.instagram.com/mnfs.dev/" target="_blank">
-            <img class="resume_icon" src="./assets/icon/instagram.png" alt="" />
+            <img
+              class="resume_icon h-35px"
+              src="./assets/icon/instagram.png"
+              alt=""
+            />
           </a>
         </section>
       </section>
-      <section id="about">
-        <section class="container">
+      <section
+        class="flex-start pt-15vh w-80 min-h-screen display-flex flex-col items-center"
+        id="about"
+      >
+        <section class="container gap-20px flex-col align-start">
           <section>
-            <h1 class="title"><span>About</span></h1>
-            <h1 class="description">Here I tell a little about me</h1>
+            <h1 class="title text-30px"><span>About</span></h1>
+            <h1 class="description font-light">
+              Here I tell a little about me
+            </h1>
           </section>
           <section>
             <p class="sub_title"><span> This is me </span></p>
@@ -67,7 +93,7 @@
           </section>
           <section>
             <p class="sub_title"><span>Skills </span></p>
-            <section id="skills">
+            <section class="display-flex" id="skills">
               <img class="skill_icon" src="./assets/icon/html.svg" />
               <img class="skill_icon" src="./assets/icon/css.svg" />
               <img class="skill_icon" src="./assets/icon/js.svg" />
@@ -77,49 +103,64 @@
           </section>
         </section>
       </section>
-      <section id="projects">
-        <section class="container">
+      <section
+        class="flex-start pt-15vh w-80 display-flex flex-col items-center min-h-screen"
+        id="projects"
+      >
+        <section class="container gap-20px display-flex flex-col align-start">
           <section>
-            <h1 class="title"><span>Projects</span></h1>
-            <h1 class="description">
+            <h1 class="title text-30px"><span>Projects</span></h1>
+            <h1 class="description font-light">
               These are some of the projects I've made
             </h1>
           </section>
           <section class="grid">
-            <section class="card">
+            <section class="card flex-col display-flex">
               <a href="https://shortway.mnfs.dev/" target="_blank">
                 <section class="card_image">
-                  <img src="./assets/img/shortway.png" alt="" />
+                  <img
+                    class="w-full h-full"
+                    src="./assets/img/shortway.png"
+                    alt=""
+                  />
                 </section>
                 <section class="card_body">
                   <p class="sub_title">Shortway</p>
-                  <p class="description">
+                  <p class="description font-light">
                     A website application to shorten long urls
                   </p>
                 </section>
               </a>
             </section>
-            <section class="card">
+            <section class="card flex-col display-flex">
               <a href="https://weather.mnfs.dev/" target="_blank">
                 <section class="card_image">
-                  <img src="./assets/img/weather.png" alt="" />
+                  <img
+                    class="w-full h-full"
+                    src="./assets/img/weather.png"
+                    alt=""
+                  />
                 </section>
                 <section class="card_body">
                   <p class="sub_title">Weather App</p>
-                  <p class="description">
+                  <p class="description font-light">
                     A website to see the weather in several places
                   </p>
                 </section>
               </a>
             </section>
-            <section class="card">
+            <section class="card flex-col display-flex">
               <a href="https://quickchat.mnfs.dev/" target="_blank">
                 <section class="card_image">
-                  <img src="./assets/img/quickchat.png" alt="" />
+                  <img
+                    class="w-full h-full"
+                    src="./assets/img/quickchat.png"
+                    alt=""
+                  />
                 </section>
                 <section class="card_body">
                   <p class="sub_title">Quickchat</p>
-                  <p class="description">
+                  <p class="description font-light">
                     A website to generate whatsapp numbers to url
                   </p>
                 </section>
@@ -128,23 +169,28 @@
           </section>
         </section>
       </section>
-      <section id="blog">
-        <section class="container">
+      <section
+        class="flex-start pt-15vh w-80 display-flex flex-col items-center min-h-screen"
+        id="blog"
+      >
+        <section class="container gap-20px display-flex flex-col align-start">
           <section>
-            <h1 class="title"><span>Blog</span></h1>
-            <h1 class="description">
+            <h1 class="title text-30px"><span>Blog</span></h1>
+            <h1 class="description font-light">
               You can read my writings, hoping to help you understand everything
               about web developers
             </h1>
           </section>
           <section id="open_modal">
             <p class="sub_title">React app with Vite</p>
-            <p class="description">How to create a new React app with Vite</p>
+            <p class="description font-light">
+              How to create a new React app with Vite
+            </p>
           </section>
-          <section id="my_modal" class="modal">
-            <section class="modal_content">
+          <section id="my_modal" class="modal fixed h-full">
+            <section class="modal_content w-80 bg-black">
               <span class="close">&times;</span>
-              <section class="content">
+              <section class="content display-flex flex-col">
                 <section>
                   <p class="sub_title">
                     How to create a new React app with Vite
